@@ -4,48 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Turismos</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="flex-container header-flex">
-        <h1>FlexTurismos</h1>
-        <nav>
+    <header class="flex-container">
+        <div class ="flex-container header-start">
+            <img src="./images/logo.png" alt="logo flex turismos">
+            <h1>FlexTurismos</h1>  
+        </div>  
+        <nav class="flex-container header-end">
             <li><a href="#quem-somos">Quem Somos</a></li>
             <li><a href="#servicos">Serviços</a></li>
             <li><a href="#planos">Planos</a></li>
         </nav>
     </header>
 
-    <div class="flex-container">
-        <div>
+    <div class="flex-container content-1">
+        <div class="content-div-1">
             <h1>Flex <br>Turismos</h1>
             <p>O melhor serviço para você!</p>
-            <a href="">Saiba Mais!</a>
+            <a class="btn" href="">Saiba Mais!</a>
         </div>
 
         <div>
-            <div><img src="./images/0-main.png" alt="banner de apresentação"></div>
+            <img src="./images/0-main.png" alt="banner de apresentação">
         </div>
     </div>
 
-    <div class="flex-container">
+    <div class="flex-container content-1">
         <div>
             <img src="./images/1-quem-somos.png" alt="balcão de atendimento">
         </div>
 
-        <div>
+        <div id="quem-somos">
             <h2>Quem somos</h2>
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
             <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
         </div>
     </div>
 
-    <div class="flex-container">
-        <div>
-            <h2>Serviços</h2>
-        </div>
-
-        <div>
+    <div class="content-externo">
+        <div class="flex-container content-2">
+            <div id="servicos">
+                <h2>Serviços</h2>
+            </div>    
             <div>
                 <div><img src="./images/icon-2.png" alt="hospedagens"></div>
                 <p>Hospedagens</p>
@@ -53,9 +56,9 @@
             </div>
 
             <div>
-               <div><img src="./images/icon-1.png" alt="pacote de viagens"></div>
-               <p>Pacotes de viagens</p>
-               <a href="#">Comprar Agora</a>
+                <div><img src="./images/icon-1.png" alt="pacote de viagens"></div>
+                <p>Pacotes de viagens</p>
+                <a href="#">Comprar Agora</a>
             </div>
 
             <div>
@@ -63,20 +66,19 @@
                 <p>Roteiros personalizados</p>
                 <a href="#">Comprar Agora</a>
             </div>
-
         </div>
     </div>
 
-    <div class="flex-container">
+    <div id="planos" class="flex-container content-3">
 
         <div>
-            <h3>Plano 2</h3>
+            <h3>Plano 1</h3>
             <ul>
                 <li>Suporte 24h</li>
                 <li>Serviços de quarto</li>
                 <li>Guia turístico</li>
             </ul>
-            <a href="#">Saiba Mais!</a>
+            <a class="btn" href="#">Saiba Mais!</a>
         </div>
 
         <div>
@@ -88,7 +90,7 @@
                 <li>Roteiro de trilhas</li>
                 <li>Serviço personalizado</li>
             </ul>
-            <a href="#">Saiba Mais!</a>
+            <a class="btn" href="#">Saiba Mais!</a>
         </div>
 
         <div>
@@ -101,13 +103,13 @@
                 <li>Serviço personalizado</li>
                 <li>Área Vip</li>
             </ul>
-            <a href="#">Saiba Mais!</a>
+            <a class="btn" href="#">Saiba Mais!</a>
         </div>
     </div>
 
     <footer>
         <p>&copy; 2021 CSS Flexbox</p>
-        <p>Desenvolvido por: Seu nome aqui dev</p>
+        <p>Desenvolvido por: Fernando Wallace Oliveira</p>
     </footer>
 </body>
 </html>

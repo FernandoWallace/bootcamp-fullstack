@@ -1,0 +1,152 @@
+/*CSS - Página Login*/
+
+/*padroniza o documento*/
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color:rgb(250,250,250);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container pai */
+.flex-container{ 
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+/* Container filho coluna esquerda*/
+.container-left{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.container-left img{
+    height: 40rem;
+}
+
+/* Container filho coluna direita*/
+.container-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.instagram-logo{
+    margin-top: 1rem;
+}
+
+.profile-photo img{
+    height: 6rem;
+}
+
+.profile-photo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 1.5rem;
+    border: 2px solid lightblue;
+    border-radius: 50%;
+}
+
+/* 
+-Contido no container-right 
+-Pertence ao Profile do usuário
+-Direção do Flex em coluna
+*/
+.group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 1.2rem 0;
+    margin-bottom: 0px;
+}
+
+.group::nth-child(1){
+    min-height: 19rem;
+}
+
+.instagram-login{
+    margin-top: 1.5rem;
+    background-color: dodgerblue;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout{
+    margin-top: 1rem;
+    color: dodgerblue;
+}
+
+.not-account{
+    color: rgb(160,160,160);
+    margin-bottom: 4px;
+}
+
+.link-blue{
+    color: dodgerblue;
+}
+
+/* Container Download do Aplicativo */
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0rem 0;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+}
+
+/*  
+-Filhos da Classe app-download
+-Cada filho tem um background para a loja de aplicativo
+*/
+.app-download:nth-child(1){
+    background: url("../images/apple-store.png");  
+    background-size: contain;
+    background-repeat: no-repeat;   
+}
+
+.app-download:nth-child(2){
+    background: url("../images/play-store.png"); 
+    background-size: contain;
+    background-repeat: no-repeat;
+}

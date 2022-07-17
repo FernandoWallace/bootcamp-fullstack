@@ -1,12 +1,23 @@
 body{
     margin: 0;
     padding: 0;
+    color: midnightblue;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+img{
+    margin: 0;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
     color: black;
+}
+
+p{
+    margin-bottom: 10px;
+    width: 100%;
 }
 
 a:hover{
@@ -26,7 +37,7 @@ nav > li{
 
 nav > li a{
     text-decoration: none;
-    color: aliceblue;
+    color: white;
 }
 
 nav > li a:hover{
@@ -36,19 +47,144 @@ nav > li a:hover{
 .flex-container{
     max-width: 992px;
     display: flex;
-    margin: auto;
-    justify-content: center;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
 }
 
 header{
-    background-color: dodgerblue;
+    background-color:midnightblue;
+    height: 100px;
 }
 
 header h1{
-    color: aliceblue;
+    color: white;
 }
 
-.header-flex{
-    justify-content: space-around;
-    align-items: center;
+header img{
+    max-width: 80px;
+    margin: 10px 5px;
+}
+
+.header-start{
+    justify-content: flex-start;
+}
+
+.header-end{
+    justify-content: flex-end;
+    max-width: 360px;
+    width: 100%;
+}
+
+.content-externo{
+    width:100%;
+    background-color: midnightblue;
+    padding: 40px 0;
+    margin-bottom: 25px;
+}
+
+.content-1{
+    margin-top: 15px;
+    margin-bottom: -15px;
+}
+
+.content-1 img{
+    display:block;
+    width: 100%;
+    min-width: 420px;
+}
+
+.content-1 h2{
+    border-left: 4px solid midnightblue; 
+    padding-left: 5px;
+}
+
+.content-div-1 h1{
+    color: midnightblue;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    background-color: midnightblue;
+    color:aliceblue;
+    border-radius: 30px;
+    height: 50px;
+    width: 220px;
+    display: block;
+    line-height: 53px;
+    text-align: center;
+    /*padding: 8px 15px;*/
+}
+
+.content-div-1{
+    width: 50%;
+}
+
+.content-2{
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.content-2 img{
+    max-width: 100px;
+} 
+
+.content-2 div > a{
+    background-color: aliceblue;
+    color:midnightblue;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px 12px;
+}
+
+.content-3{
+    align-items: flex-end;
+}
+
+.content-3 h3 {
+    border-bottom: 2px solid midnightblue;
+    width: 180px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+
+.content-3 div{
+    flex: 1;
+    background-color: aliceblue;
+    border: 2px solid midnightblue;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    /*margin: 30px 0;
+    padding: 20px 10px 25px 0px;*/
+    text-align: center;
+    color: midnightblue;
+}
+
+.content-3 div > ul{
+    margin-left: 40px;
+}
+
+.content-3 div > a{
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.content-3 ul{
+    list-style: square;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin: 0 auto;
+    width: 100%;
+    background-color: midnightblue;
+    text-align: center;
+    color: white;
 }

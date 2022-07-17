@@ -1,0 +1,53 @@
+/* CSS Responsive Login */
+
+@media (max-width: 1150px){
+    .flex-container{
+        width: 90%;
+    }
+}
+
+@media (max-width: 780px){
+    body{
+        background-color: white;
+    }
+
+    .flex-container{
+        width: 90%;
+    }
+
+    .container-left{
+        display: none;
+    }
+
+    .container-right{
+        width: 100%;
+    }
+
+    .group{
+        border: 1px solid transparent;
+        background-color:rgb(250,250,250);
+    }
+
+    .get-the-app{
+        margin-top: 1rem;
+    }
+
+    .download{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .app-download{
+        margin-bottom: 0.8rem;
+        height: 4rem;
+        width: 13rem;
+    }
+
+    .app-download:nth-child(1){
+        background-size: contain;
+    }
+
+    .app-download:nth-child(2){
+        background-size: contain;  
+    }
+}

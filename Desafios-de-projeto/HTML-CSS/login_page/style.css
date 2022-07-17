@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-container{
+    max-width: 992px;
+    display: flex;
+    background-color:darksalmon;
+}
+
+.container-left{
+    display: flex;
+}
+
+.container-right{
+    display: flex;
+}
